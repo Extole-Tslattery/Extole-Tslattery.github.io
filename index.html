@@ -196,16 +196,42 @@
 			<script src="assets/js/main.js"></script>
 			<script src='https://tom-slattery-test.extole.io/core.js' async></script>
 		
-		<span id='extole_zone_overlay'></span>
+	<!-- First Tag -->
 	<script type="text/javascript">
 	    (function(c,b,f,k,a){c[b]=c[b]||{};for(c[b].q=c[b].q||[];a<k.length;)f(k[a++],c[b])})(window,"extole",function (c,b){b[c]=b[c]||function (){b.q.push([c,arguments])}},["createZone"],0);
 	    extole.createZone({
-		name: "overlay",
-		element_id: 'extole_zone_overlay',
+		name: "extole_zone_global_header",
+		element_id: "global_header"
 		data: {"labels":"tagging-101"
 		}
    		 });
 	</script>
 
+	<!-- Second/Overlay Tag -->
+	<script type="text/javascript">
+	    (function(c,b,f,k,a){c[b]=c[b]||{};for(c[b].q=c[b].q||[];a<k.length;)f(k[a++],c[b])})(window,"extole",function (c,b){b[c]=b[c]||function (){b.q.push([c,arguments])}},["createZone"],0);
+	    extole.createZone({
+		name: "overlay",
+		data: {"labels":"tagging-101"
+		}
+   		 });
+	</script>
+
+	<!-- Third Tag -->
+	<script type="text/javascript">
+			(function(c,b,f,k,a){c[b]=c[b]||{};for(c[b].q=c[b].q||[];a<k.length;)f(k[a++],c[b])})(window,"extole",function (c,b){b[c]=b[c]||function (){b.q.push([c,arguments])}},["createZone"],0);
+			extole.createZone({
+			name: "global_header",
+			element_id: "extone_zone_third_CTA"
+			data: {"labels":"tagging-101"
+			}
+				});
+	</script>
+
+	<span id='extole_zone_third_CTA'></span>
+	<!-- You found me!  -->
 	</body>
+
+
+	
 </html>
